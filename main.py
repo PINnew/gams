@@ -8,4 +8,3 @@ while running:
 
 pygame.quit()
 
-#print()
