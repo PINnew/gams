@@ -10,9 +10,9 @@ pygame.display.set_caption('Игра Тир')
 icon = pygame.image.load('img/Тир.jpg')
 pygame.display.set_icon(icon)
 
-target_ing = pygame.image.load('img/target.png')
-target_width = 80
-target_height = 80
+target_img = pygame.image.load('img/targe.png')
+target_width = 50
+target_height = 50
 
 target_x = random.randint(0, SCREEN_WIDTH - target_width)
 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
@@ -30,7 +30,7 @@ while running:
             if target_x < mouse_x < target_x + target_width and target_y < mouse_y < target_y + target_height:
                 target_x = random.randint(0, SCREEN_WIDTH - target_width)
                 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
-    screen.blit(tardet_imd, (target_x, target_y))
+    screen.blit(target_img, (target_x, target_y))
     pygame.display.update()
 
 pygame.quit()
