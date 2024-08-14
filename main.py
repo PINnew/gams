@@ -1,6 +1,5 @@
 import pygame
 import random
-
 pygame.init()
 
 SCREEN_WIDTH = 800
